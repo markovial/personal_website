@@ -1,26 +1,49 @@
+<!-- src/App.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" :class="{ 'dark-mode': isDarkMode }">
+    <TopBar />
+    <SidebarMenu />
+    <MainContent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+import TopBar from './components/TopBar.vue'
+import SidebarMenu from './components/Sidebar.vue'
+import MainContent from './components/MainContent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TopBar,
+    SidebarMenu,
+    MainContent
+  },
+  setup() {
+    const store = useStore()
+    const isDarkMode = computed(() => store.state.isDarkMode)
+
+    return {
+      isDarkMode
+    }
   }
 }
 </script>
+
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
 }
 </style>
