@@ -1,0 +1,65 @@
+Directory tree of: /home/markov/git/personal_website
+├── dist
+│   ├── css
+│   │   └── app.a59d7d01.css
+│   ├── img
+│   │   ├── about.95015616.svg
+│   │   ├── arxiv.6b653ee1.svg
+│   │   ├── books.9bf8291d.svg
+│   │   ├── contact.198d9f86.svg
+│   │   ├── moon.f4e808bb.svg
+│   │   ├── skills.f204b18b.svg
+│   │   ├── sun.be2fd77d.svg
+│   │   └── write.8db02dea.svg
+│   ├── js
+│   │   ├── app.7cf4a7f3.js
+│   │   ├── chunk-vendors.40101d81.js
+│   └── index.html
+├── public
+│   └── index.html
+├── src
+│   ├── assets
+│   │   ├── blog
+│   │   │   └── post_test
+│   │   │       └── post.md
+│   │   ├── icons
+│   │   ├── about.svg
+│   │   ├── arxiv.svg
+│   │   ├── books.svg
+│   │   ├── close.svg
+│   │   ├── contact.svg
+│   │   ├── email.svg
+│   │   ├── ethereum.svg
+│   │   ├── github.svg
+│   │   ├── ipfs.svg
+│   │   ├── latex.svg
+│   │   ├── linkedin.svg
+│   │   ├── menu.svg
+│   │   ├── monero.svg
+│   │   ├── moon.svg
+│   │   ├── rss.svg
+│   │   ├── search.svg
+│   │   ├── session.svg
+│   │   ├── signal.svg
+│   │   ├── skills.svg
+│   │   ├── sort.svg
+│   │   ├── sun.svg
+│   │   ├── telegram.svg
+│   │   ├── terminal.svg
+│   │   ├── theme.svg
+│   │   └── write.svg
+│   ├── components
+│   ├── router
+│   │   └── index.js
+│   ├── store
+│   │   ├── modules
+│   │   │   ├── content.js
+│   │   │   └── theme.js
+│   │   └── index.js
+│   ├── views
+│   └── main.js
+├── .eslintrc.js
+├── babel.config.js
+├── README.md
+├── tree.py
+├── vue.config.js

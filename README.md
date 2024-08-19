@@ -1,3 +1,5 @@
+
+yarn add d3
 yarn add markdown-it markdown-it-mathjax3
 yarn add -D frontmatter-markdown-loader
 yarn add -D vue-template-compiler @vue/component-compiler-utils
@@ -200,3 +202,87 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - Create a portfolio section with project showcases
 - Integrate with a CMS for easier content management
 - Implement web analytics
+
+
+## Dependencies
+
+- @babel/code-frame: ^7.24.7
+- @babel/helper-module-imports: ^7.24.7
+- acorn: ^8.12.1
+- ajv: ^6.12.6
+- ajv-keywords: ^3.5.2
+- ansi-styles: ^4.3.0
+- argparse: ^2.0.1
+- axios: ^1.7.4
+- bytes: ^3.1.2
+- camelcase: ^5.3.1
+- chalk: ^4.1.2
+- commander: ^7.2.0
+- core-js: ^3.38.0
+- cross-spawn: ^7.0.3
+- debug: ^4.3.6
+- depd: ^2.0.0
+- domhandler: ^4.3.1
+- entities: ^2.2.0
+- escape-string-regexp: ^1.0.5
+- eslint-scope: ^5.1.1
+- eslint-visitor-keys: ^2.1.0
+- espree: ^7.3.1
+- estraverse: ^5.3.0
+- execa: ^1.0.0
+- glob-parent: ^5.1.2
+- globals: ^11.12.0
+- has-flag: ^4.0.0
+- hash-sum: ^1.0.2
+- html-tags: ^2.0.0
+- htmlparser2: ^6.1.0
+- http-errors: ^2.0.0
+- ignore: ^4.0.6
+- inherits: ^2.0.4
+- is-fullwidth-code-point: ^3.0.0
+- is-stream: ^1.1.0
+- jest-worker: ^27.5.1
+- json5: ^2.2.3
+- loader-utils: ^2.0.4
+- lru-cache: ^4.1.5
+- markdown-it: ^14.1.0
+- markdown-it-katex: ^2.0.3
+- markdown-it-mathjax3: ^4.3.2
+- ms: ^2.1.3
+- normalize-path: ^3.0.0
+- npm-run-path: ^2.0.2
+- onetime: ^5.1.2
+- parse5: ^6.0.1
+- path-key: ^2.0.1
+- picocolors: ^1.0.1
+- postcss: ^8.4.41
+- prismjs: ^1.29.0
+- readable-stream: ^3.6.2
+- safe-buffer: ^5.2.1
+- schema-utils: ^4.2.0
+- semver: ^6.3.1
+- setprototypeof: ^1.2.0
+- shebang-command: ^1.2.0
+- statuses: ^2.0.1
+- string-width: ^4.2.3
+- strip-ansi: ^6.0.1
+- supports-color: ^7.2.0
+- tippy.js: ^6.3.7
+- uc.micro: ^1.0.6
+- vue: ^3.4.38
+- vue-router: ^4.4.3
+- which: ^1.3.1
+- yallist: ^4.0.0
+
+## Dev Dependencies
+
+- @babel/core: ^7.25.2
+- @babel/eslint-parser: ^7.25.1
+- @vue/cli-plugin-babel: ^5.0.8
+- @vue/cli-plugin-eslint: ^5.0.8
+- @vue/cli-service: ^5.0.8
+- @vue/component-compiler-utils: ^3.3.0
+- eslint: ^7.32.0
+- eslint-plugin-vue: ^8.7.1
+- frontmatter-markdown-loader: ^3.7.0
+- vue-template-compiler: ^2.7.16

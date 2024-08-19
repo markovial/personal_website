@@ -1,12 +1,9 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
-
 // vue.config.js
+const { defineConfig } = require('@vue/cli-service')
 const path = require('path')
 
-module.exports = {
+module.exports = defineConfig({
+  transpileDependencies: true,
   chainWebpack: config => {
     config.module
       .rule('markdown')
@@ -16,7 +13,6 @@ module.exports = {
         .options({
           mode: ['body']
         })
-
     config.resolve.alias.set('@', path.resolve(__dirname, 'src'))
   }
-}
+})
