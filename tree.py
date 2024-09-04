@@ -45,4 +45,4 @@ def generate_tree(output_file='tree', include_formats=None, exclude_dirs=None):
 
 # Example usage
 if __name__ == "__main__":
-    generate_tree(include_formats=['.py', '.txt', '.svg', '.md', '.css', '.js', '.html', '.yml' ], exclude_dirs=['node_modules'])
+    generate_tree(include_formats=['.py', '.txt', '.svg', '.md', '.css', '.js', '.html', '.yml', '.vue' ], exclude_dirs=['node_modules'])

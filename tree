@@ -1,7 +1,7 @@
 Directory tree of: /home/markov/git/personal_website
 ├── dist
 │   ├── css
-│   │   └── app.a59d7d01.css
+│   │   └── app.f8ae50c0.css
 │   ├── img
 │   │   ├── about.95015616.svg
 │   │   ├── arxiv.6b653ee1.svg
@@ -12,8 +12,8 @@ Directory tree of: /home/markov/git/personal_website
 │   │   ├── sun.be2fd77d.svg
 │   │   └── write.8db02dea.svg
 │   ├── js
-│   │   ├── app.7cf4a7f3.js
-│   │   ├── chunk-vendors.40101d81.js
+│   │   ├── app.28564eac.js
+│   │   ├── chunk-vendors.51e85550.js
 │   └── index.html
 ├── public
 │   └── index.html
@@ -23,6 +23,8 @@ Directory tree of: /home/markov/git/personal_website
 │   │   │   └── post_test
 │   │   │       └── post.md
 │   │   ├── icons
+│   │   │   └── skills
+│   │   │       └── locked.svg
 │   │   ├── about.svg
 │   │   ├── arxiv.svg
 │   │   ├── books.svg
@@ -49,14 +51,30 @@ Directory tree of: /home/markov/git/personal_website
 │   │   ├── theme.svg
 │   │   └── write.svg
 │   ├── components
+│   │   ├── MainContent.vue
+│   │   ├── Sidebar.vue
+│   │   ├── Skill.vue
+│   │   ├── SkillCategory.vue
+│   │   ├── SkillGraph.vue
+│   │   └── TopBar.vue
 │   ├── router
 │   │   └── index.js
 │   ├── store
 │   │   ├── modules
 │   │   │   ├── content.js
+│   │   │   ├── skills.js
 │   │   │   └── theme.js
 │   │   └── index.js
 │   ├── views
+│   │   ├── About.vue
+│   │   ├── Blog.vue
+│   │   ├── BlogPost.vue
+│   │   ├── Books.vue
+│   │   ├── Contact.vue
+│   │   ├── Home.vue
+│   │   ├── Research.vue
+│   │   └── Skills.vue
+│   ├── App.vue
 │   └── main.js
 ├── .eslintrc.js
 ├── babel.config.js

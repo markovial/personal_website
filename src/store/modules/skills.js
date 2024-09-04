@@ -1,4 +1,5 @@
 // src/store/modules/skills.js
+
 export default {
   namespaced: true,
   state: {
@@ -6,6 +7,7 @@ export default {
       {
         id: 1,
         name: 'Artificial Intelligence',
+        progress: 0,
         subskills: [
           {
             id: 2,
@@ -67,9 +69,9 @@ export default {
                 locked: false,
                 expanded: false,
                 subskills: [
-                  { id: 18, name: 'Tokenization', progress: 80, locked: false },
-                  { id: 19, name: 'Stemming', progress: 75, locked: false },
-                  { id: 20, name: 'Lemmatization', progress: 70, locked: false }
+                  { id: 18, name: 'Tokenization', progress: 100, locked: false },
+                  { id: 19, name: 'Stemming', progress: 100, locked: false },
+                  { id: 20, name: 'Lemmatization', progress: 100, locked: false }
                 ]
               },
               {
@@ -79,13 +81,13 @@ export default {
                 locked: false,
                 expanded: false,
                 subskills: [
-                  { id: 22, name: 'N-gram Models', progress: 70, locked: false },
-                  { id: 23, name: 'Neural Language Models', progress: 60, locked: false },
+                  { id: 22, name: 'N-gram Models', progress: 0, locked: true },
+                  { id: 23, name: 'Neural Language Models', progress: 0, locked: true },
                   { id: 24, name: 'Transformer Models', progress: 55, locked: false }
                 ]
               },
-              { id: 25, name: 'Named Entity Recognition', progress: 70, locked: false },
-              { id: 26, name: 'Sentiment Analysis', progress: 75, locked: false }
+              { id: 25, name: 'Named Entity Recognition', progress: 0, locked: true },
+              { id: 26, name: 'Sentiment Analysis', progress: 0, locked: true }
             ]
           },
           {
@@ -138,7 +140,7 @@ export default {
             return true;
           }
           if (skill.subskills && updateProgress(skill.subskills)) {
-            skill.progress = skill.subskills.reduce((acc, s) => acc + s.progress, 0) / skill.subskills.length;
+            skill.progress = calculateAverageProgress(skill.subskills);
             return true;
           }
         }
@@ -148,6 +150,22 @@ export default {
       const category = state.categories.find(c => c.id === categoryId);
       if (category) {
         updateProgress(category.subskills);
+        category.progress = calculateAverageProgress(category.subskills);
+      }
+    },
+    recalculateAllProgress(state) {
+      const recalculateProgress = (skills) => {
+        for (let skill of skills) {
+          if (skill.subskills && skill.subskills.length > 0) {
+            recalculateProgress(skill.subskills);
+            skill.progress = calculateAverageProgress(skill.subskills);
+          }
+        }
+      };
+
+      for (let category of state.categories) {
+        recalculateProgress(category.subskills);
+        category.progress = calculateAverageProgress(category.subskills);
       }
     },
     toggleSkillLock(state, { categoryId, skillId }) {
@@ -193,6 +211,9 @@ export default {
     updateSkillProgress({ commit }, payload) {
       commit('updateSkillProgress', payload);
     },
+    recalculateAllProgress({ commit }) {
+      commit('recalculateAllProgress');
+    },
     toggleSkillLock({ commit }, payload) {
       commit('toggleSkillLock', payload);
     },
@@ -220,3 +241,10 @@ export default {
     }
   }
 };
+
+// Helper function to calculate average progress
+function calculateAverageProgress(skills) {
+  if (skills.length === 0) return 0;
+  const totalProgress = skills.reduce((sum, skill) => sum + skill.progress, 0);
+  return Math.round(totalProgress / skills.length);
+}

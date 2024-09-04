@@ -3,19 +3,17 @@
   <div v-if="category" class="skill-category">
     <div class="navigation">
       <router-link :to="{ name: 'Skills' }" class="nav-button">
-        ← Back to All Skills
+        Back
       </router-link>
-      <div class="category-nav">
-        <button @click="navigateCategory(-1)" :disabled="!previousCategory" class="nav-button">
-          ← Previous
-        </button>
-        <h2>{{ category.name }}</h2>
-        <button @click="navigateCategory(1)" :disabled="!nextCategory" class="nav-button">
-          Next →
-        </button>
-      </div>
+      <button @click="navigateCategory(-1)" :disabled="!previousCategory" class="nav-button">
+        Previous
+      </button>
+      <button @click="navigateCategory(1)" :disabled="!nextCategory" class="nav-button">
+        Next
+      </button>
     </div>
-    <SkillGraph :skills="category.subskills || []" @toggle-skill="toggleSkill" />
+    <h2>{{ category.name }}</h2>
+    <TreeSkillVisualization :categoryId="categoryId" />
   </div>
   <div v-else class="skill-category">
     <p>Category not found.</p>
@@ -29,12 +27,12 @@
 import { computed } from 'vue'
 import { useStore } from 'vuex'
 import { useRoute, useRouter } from 'vue-router'
-import SkillGraph from './SkillGraph.vue'
+import TreeSkillVisualization from './TreeSkillVisualization.vue'
 
 export default {
   name: 'SkillCategory',
   components: {
-    SkillGraph
+    TreeSkillVisualization
   },
   setup() {
     const store = useStore()
@@ -56,21 +54,16 @@ export default {
       }
     }
 
-    const toggleSkill = (skillId) => {
-      store.dispatch('skills/toggleSkillExpanded', { categoryId: categoryId.value, skillId })
-    }
-
     return {
+      categoryId,
       category,
       previousCategory,
       nextCategory,
-      navigateCategory,
-      toggleSkill
+      navigateCategory
     }
   }
 }
 </script>
-
 <style scoped>
 .skill-category {
   padding: 20px;
@@ -78,23 +71,14 @@ export default {
 
 .navigation {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 20px;
-}
-
-.category-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 600px;
-  margin-top: 20px;
 }
 
 h2 {
   text-align: center;
-  margin: 0 20px;
+  margin-bottom: 20px;
 }
 
 .nav-button {
