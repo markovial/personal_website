@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkpersonal_website"]=self["webpackChunkpersonal_website"]||[]).push([[73],{3073:function(e,s,p){e.exports=p.p+"img/wh2_Image_8.653d8099.png"}}]);
