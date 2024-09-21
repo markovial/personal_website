@@ -1,0 +1,107 @@
+/* src/assets/css/theme.css */
+
+:root {
+  /* Color Palette */
+  --text-color: #161616;
+  --background-color: #ffffff;
+  --highlight-color: #4A4A4A;
+  --text-color-secondary: #777777;
+
+  /* Typography */
+  --font-family-main: 'Noto Serif', serif;
+  --font-family-titles: 'Noto Serif', serif;
+  --font-size-base: 16px;
+  --font-size-h1: 1.5rem;
+  --font-size-h2: 1.3rem;
+  --font-size-h3: 1.1rem;
+  --font-size-small: 0.875rem;
+  --line-height: 1.6;
+
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+
+  /* Other */
+  --transition-speed: 0.3s;
+  --progress-bar-background: #E0E0E0;
+  --progress-bar-foreground: #4A4A4A;
+  --highlight-color-rgb: 74, 74, 74;
+
+  /* Content Width */
+  --mobile-content-width: 95%;
+  --desktop-content-width: 80%;
+  --max-content-width: 1200px;
+
+    --background-color-secondary: #f0f0f0; /* Or any color you prefer */
+
+}
+
+body {
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: var(--spacing-small);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-main);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-small);
+}
+
+a {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content-container {
+  width: var(--mobile-content-width);
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+  padding-top: 0.25rem; /* Significantly reduced top padding */
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+  .content-container {
+    width: var(--desktop-content-width);
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+    padding-top: 0.5rem; /* Slightly more padding for desktop, but still close to the top */
+  }
+}
+
+/* New class for full-width sections */
+.full-width {
+  width: 100%;
+  max-width: none;
+}
+
+/* Standardized Progress Bar Styles */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--progress-bar-background);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--progress-bar-foreground);
+  transition: width var(--transition-speed) ease-in-out;
+}

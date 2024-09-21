@@ -33,17 +33,35 @@ export default {
       commit('setBooks', booksData)
     },
     async loadBlogPosts({ commit }) {
-      const context = require.context('@/assets/blog', true, /\.md$/)
-      const posts = await Promise.all(context.keys().map(async (key) => {
-        const { attributes, body } = await import(`@/assets/blog${key.slice(1)}`)
-        const slug = key.split('/').pop().replace('.md', '')
-        return {
-          slug,
-          ...attributes,
-          content: body
-        }
-      }))
-      commit('setBlogPosts', posts)
+      try {
+        console.log('Starting to load blog posts...')
+        const context = require.context('@/assets/blog', true, /\.md$/)
+        console.log('Found markdown files:', context.keys())
+        
+        const posts = await Promise.all(context.keys().map(async (key) => {
+          try {
+            console.log('Processing file:', key)
+            const { attributes, body } = await import(`@/assets/blog${key.slice(1)}`)
+            const slug = key.split('/').pop().replace('.md', '')
+            console.log('Processed post:', { slug, attributes })
+            return {
+              slug,
+              ...attributes,
+              content: body
+            }
+          } catch (error) {
+            console.error('Error processing markdown file:', key, error)
+            return null
+          }
+        }))
+        
+        const validPosts = posts.filter(post => post !== null)
+        console.log('Loaded valid posts:', validPosts)
+        commit('setBlogPosts', validPosts)
+      } catch (error) {
+        console.error('Error in loadBlogPosts:', error)
+        throw error
+      }
     }
   },
   getters: {

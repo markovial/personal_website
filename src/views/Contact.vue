@@ -1,13 +1,21 @@
-<!-- src/views/Projects.vue -->
+<!-- src/views/Contact.vue -->
 <template>
-  <div class="projects">
-    <h1>Projects</h1>
-    <p>This is the projects page.</p>
+  <div class="contact content-container">
+    <div class="tabs-container">
+      <button 
+        v-for="tab in tabs" 
+        :key="tab.key"
+        @click="currentTab = tab.key"
+        :class="['tab-button', { active: currentTab === tab.key }]"
+      >
+        {{ tab.label }}
+      </button>
+    </div>
+
+    <ContactTab
+      :tab="currentTab"
+      :contacts="currentContacts"
+      @copy-to-clipboard="copyToClipboard"
+    />
   </div>
 </template>
-
-<script>
-export default {
-  name: 'ProjectsView'
-}
-</script>

@@ -1,3 +1,46 @@
+notes:
+To ensure that images are properly displayed both locally and when deployed to GitHub Pages, let's make a few adjustments to how you're importing and using images in your Vue components:
+
+For images in the assets folder, use the require function when setting the src attribute. This ensures that Webpack processes the images correctly. Here's an example:
+
+vueCopy<template>
+  <img :src="require('@/assets/images/example.jpg')" alt="Example Image">
+</template>
+
+For dynamically imported images (like in your Blog posts), you can use a method to resolve the image path:
+
+vueCopy<script>
+export default {
+  methods: {
+    getImageUrl(imageName) {
+      return require(`@/assets/blog/${this.$route.params.slug}/${imageName}`)
+    }
+  }
+}
+</script>
+
+<template>
+  <img :src="getImageUrl('example.jpg')" alt="Example Image">
+</template>
+
+For SVG icons, make sure you're importing them with the ?inline query and using them as components:
+
+vueCopy<script>
+import IconSvg from '@/assets/icons/icon.svg?inline'
+
+export default {
+  components: {
+    IconSvg
+  }
+}
+</script>
+
+<template>
+  <IconSvg class="icon" />
+</template>
+
+
+
 
 yarn add d3
 yarn add markdown-it markdown-it-mathjax3

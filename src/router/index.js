@@ -1,60 +1,52 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Skills from '../views/Skills.vue'
-import SkillCategory from '../components/SkillCategory.vue'
 import Books from '../views/Books.vue'
 import Blog from '../views/Blog.vue'
 import BlogPost from '../views/BlogPost.vue'
-import Research from '../views/Research.vue'
+import Physical from '../views/Physical.vue'
 import Contact from '../views/Contact.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: '/about'
   },
   {
     path: '/about',
     name: 'About',
-    component: About
-  },
-  {
-    path: '/skills',
-    name: 'Skills',
-    component: Skills
-  },
-  {
-    path: '/skills/:categoryId',
-    name: 'SkillCategory',
-    component: SkillCategory
+    component: About,
+    meta: { title: 'Markov' }
   },
   {
     path: '/books',
     name: 'Books',
-    component: Books
+    component: Books,
+    meta: { title: 'Books' }
   },
   {
     path: '/blog',
     name: 'Blog',
-    component: Blog
+    component: Blog,
+    meta: { title: 'Writing' }
   },
   {
     path: '/blog/:slug',
     name: 'BlogPost',
-    component: BlogPost
+    component: BlogPost,
+    meta: { title: 'Blog Post' }
   },
   {
-    path: '/research',
-    name: 'Research',
-    component: Research
+    path: '/activities',
+    name: 'Physical',
+    component: Physical,
+    meta: { title: 'Physical' }
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: Contact,
+    meta: { title: 'Contact Me' }
   }
 ]
 

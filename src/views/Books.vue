@@ -1,70 +1,106 @@
 <!-- src/views/Books.vue -->
 <template>
-  <div class="books">
-    <h1>My Books</h1>
-    <div v-for="book in books" :key="book.isbn" class="book-item">
-      <img :src="book.image" :alt="book.title" class="book-cover">
-      <div class="book-details">
-        <h3>{{ book.title }}</h3>
-        <p>Author: {{ book.author }}</p>
-        <p>Added on: {{ formatDate(book.dateAdded) }}</p>
-        <p>Shelf: {{ book.shelf }}</p>
-      </div>
+  <div class="books content-container">
+    <div class="tabs-container">
+      <button 
+        v-for="tab in tabs" 
+        :key="tab.key"
+        @click="currentTab = tab.key"
+        :class="['tab-button', { active: currentTab === tab.key }]"
+      >
+        {{ tab.label }}
+      </button>
     </div>
+    <BookTab
+      :tab="currentTab"
+      :regularBooks="filteredRegularBooks"
+      :comicBooks="filteredComicBooks"
+      @navigate-to-book="navigateToBookDetails"
+    />
   </div>
 </template>
 
 <script>
-import { computed, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
+import BookTab from '@/components/BookTab.vue'
 
 export default {
   name: 'Books',
+  components: { BookTab },
   setup() {
     const store = useStore()
-    const books = computed(() => store.getters['content/getBooks'])
+    const currentTab = ref('reading')
+    const allBooks = computed(() => store.getters['content/getBooks'])
+
+    const tabs = [
+      { key: 'reading', label: 'Reading' },
+      { key: 'read', label: 'Read' },
+      { key: 'to-read', label: 'To Read' }
+    ]
 
     onMounted(() => {
       store.dispatch('content/loadBooks')
     })
 
-    const formatDate = (dateString) => {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(dateString).toLocaleDateString(undefined, options)
+
+
+    const isComic = (book) => {
+      const comicTags = ['manga', 'manwha', 'western-comic', 'young-comics', 'young-novels']
+      return book.tags.some(tag => comicTags.includes(tag))
+    }
+
+    const filterBooks = (books, tabKey) => {
+      switch (tabKey) {
+        case 'reading':
+          return books.filter(book => book.tags.includes('currently-reading'))
+        case 'read':
+          return books.filter(book => 
+            !book.tags.includes('currently-reading') && 
+            !book.tags.includes('to-read') && 
+            !book.tags.includes('wtr')
+          )
+        case 'to-read':
+          return books.filter(book => 
+            book.tags.includes('to-read') || book.tags.includes('wtr')
+          )
+        default:
+          return []
+      }
+    }
+
+    const filteredRegularBooks = computed(() => {
+      return filterBooks(allBooks.value.filter(book => !isComic(book)), currentTab.value)
+    })
+
+    const filteredComicBooks = computed(() => {
+      return filterBooks(allBooks.value.filter(book => isComic(book)), currentTab.value)
+    })
+
+    const navigateToBookDetails = (isbn) => {
+      console.log(`Navigating to book details for ISBN: ${isbn}`)
+      // Implement navigation logic here
     }
 
     return {
-      books,
-      formatDate
+      currentTab,
+      tabs,
+      filteredRegularBooks,
+      filteredComicBooks,
+      navigateToBookDetails
     }
   }
 }
 </script>
 
 <style scoped>
+@import '../assets/css/tab-view-styles.css';
+
 .books {
-  padding: 20px;
+  padding: var(--spacing-medium);
 }
 
-.book-item {
-  display: flex;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.book-cover {
-  width: 100px;
-  height: auto;
-  margin-right: 20px;
-}
-
-.book-details {
-  flex: 1;
-}
-
-h3 {
-  margin-top: 0;
+.books-title {
+  margin-bottom: var(--spacing-large);
 }
 </style>
