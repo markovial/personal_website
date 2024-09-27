@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "slug": "semiconductors",
+      "title": "Semiconductors",
+      "author": "Markov Grey",
+      "date": "2024-06-12",
+      "image": "semiconductors.png",
+      "summary": "Learning more about the semiconductor history, supply chain, geopolitics of it all, and near (~202X) future.",
+      "detailLevels": ["Basic", "Intermediate", "Advanced"]
+    },
+    {
+      "slug": "transformers",
+      "title": "Transformers",
+      "author": "Markov Grey",
+      "date": "2024-05-17",
+      "image": "transformer.png",
+      "summary": "Explaining attention mechanisms, transformers, embedding spaces, etc.",
+      "detailLevels": ["Level-1", "Level-2", "Level-3", "Optimus Prime"]
+    },
+    {
+      "slug": "rl",
+      "title": "Reinforcement Learning",
+      "author": "Markov Grey",
+      "date": "2024-07-01",
+      "image": "rl.png",
+      "summary": "Explaining the basics of agents, environments, and other related things to myself.",
+      "categories": ["AI", "ML", "RL"],
+      "detailLevels": ["Basic", "Intermediate", "Advanced"]
+    },
+    {
+      "slug": "oversight",
+      "title": "Scalable Oversight",
+      "author": "Markov Grey",
+      "date": "2024-09-03",
+      "image": "oversight.png",
+      "summary": "Exploring the challenges and importance of AI oversight in the modern world.",
+      "detailLevels": ["Basic", "Intermediate", "Advanced"]
+    }
+  ]
+}

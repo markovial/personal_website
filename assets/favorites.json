@@ -1,0 +1,162 @@
+{
+  "artists (digital)": [
+    {
+		"name": "Andreas Rocha",
+		"image": "artists/andreas_rocha.jpg",
+		"link": "https://www.andreasrocha.com/",
+		"sample_1": "artists/andreas_rocha_sample_1.jpg",
+		"sample_2": "artists/andreas_rocha_sample_2.jpg",
+		"sample_3": "artists/andreas_rocha_sample_3.jpg"
+	},
+    {
+		"name": "Eddie Mendoza",
+		"image": "artists/eddie_mendoza.jpg",
+		"link": "https://eddiemendozaart.com/#/keyframes/",
+		"sample_1": "artists/eddie_mendoza_sample_1.jpg",
+		"sample_2": "artists/eddie_mendoza_sample_2.jpg",
+		"sample_3": "artists/eddie_mendoza_sample_3.jpg"
+	},
+    {
+		"name": "Daniel Ignacio",
+		"image": "artists/daniel_ignacio.jpg",
+		"link": "https://www.artstation.com/dkaism",
+		"sample_1": "artists/daniel_ignacio_sample_1.jpg",
+		"sample_2": "artists/daniel_ignacio_sample_2.jpg",
+		"sample_3": "artists/daniel_ignacio_sample_3.jpg"
+	},
+    {
+		"name": "Klaus Pillon",
+		"image": "artists/klaus_pillon.jpg",
+		"link": "https://www.artstation.com/klauspillon",
+		"sample_1": "artists/klaus_pillon_sample_1.jpg",
+		"sample_2": "artists/klaus_pillon_sample_2.jpg",
+		"sample_3": "artists/klaus_pillon_sample_3.jpg"
+	},
+    {
+		"name": "Vladimir Manyukhin",
+		"image": "artists/vladimir_manyukhin.jpg",
+		"link": "https://www.artstation.com/mvn78",
+		"sample_1": "artists/vladimir_manyukhin_sample_1.jpg",
+		"sample_2": "artists/vladimir_manyukhin_sample_2.jpg",
+		"sample_3": "artists/vladimir_manyukhin_sample_3.jpg"
+	},
+    {
+		"name": "Huleeb",
+		"image": "artists/huleeb.jpg",
+		"link": "https://www.huleeb.com/",
+		"sample_1": "artists/huleeb_sample_1.jpg",
+		"sample_2": "artists/huleeb_sample_2.jpg",
+		"sample_3": "artists/huleeb_sample_3.jpg"
+	}
+  ],
+  "music": [
+  {
+    "name": "Kordhell",
+    "image": "music/kordhell.jpg",
+    "sample_1": "music/kordhell_sample_1.mp3",
+    "sample_1_image": "music/kordhell_sample_1_image.jpg",
+    "sample_1_name": "Fatality",
+	"url_sample_2": "https://www.youtube.com/watch?v=w-sQRS-Lc9k",
+    "link": "https://www.youtube.com/channel/UCS8OjP50HmdeXeKYLvF3rdA",
+    "description": "Brief description of Kordhell and their music."
+	},
+    {
+		"name": "Jon Hopkins", "image": "music/jon_hopkins.webp", 
+		"url_sample_1":"https://www.youtube.com/watch?v=n_5NJfSgE0s",
+		"url_sample_2":"https://www.youtube.com/watch?v=4sk0uDbM5lc",
+		"url_sample_3":"https://www.youtube.com/watch?v=t-w-XSbVDsI",
+		"link":"https://www.youtube.com/@jon_hopkins_",
+		"description":"Electronica, IDM, ambient, contemporary, classical, Tech house"
+	},
+    {
+		"name": "Infected Mushroom",
+		"image": "music/infected_mushroom.jpg" ,
+		"link":"https://linktr.ee/infectedmushroom"},
+    {
+		"name": "Bassnectar",
+		"image": "music/bassnectar.jpg",
+		"link":"https://bassnectar.net/" },
+    {
+		"name": "Kontra K",
+		"image": "music/kontra_k.jpg",
+		"link": "https://www.youtube.com/@kontrak/videos"
+	}
+  ],
+  "podcasts": [
+    { "name": "AXRP", "image": "podcasts/axrp.jpg", "link": "https://axrp.net/" },
+    { "name": "Machine Learning Street Talk", "image": "podcasts/mlst.png"}
+  ],
+  "donations": [
+    { "name": "Signal", "image": "software/signal.svg" },
+    { "name": "Wikipedia", "image": "software/wiki.svg" },
+    { "name": "Internet Archive", "image": "software/archive.svg" },
+    { "name": "TOR Project", "image": "software/tor.svg" }
+  ],
+  "web 3 projects": [
+    { "name": "Monero", "image": "software/monero.svg" },
+    { "name": "Ethereum", "image": "software/ethereum.svg" },
+    { "name": "Cardano", "image": "software/cardano.svg" }
+  ],
+  "software": [
+    { "name": "Linux", "image": "software/arch.svg" },
+    { "name": "Graphene OS", "image": "software/grapheneos.svg" },
+    { "name": "VLC", "image": "software/vlc.png" },
+    { "name": "Vim", "image": "software/vim.svg" }
+  ],
+  "movies": [
+    { "name": "The Prestige", "image": "movies/the_prestige.webp" },
+    { "name": "Troy", "image": "movies/troy.webp" },
+    { "name": "Curious Case of Benjamin Button", "image": "movies/benjamin_button.webp" },
+    { "name": "Oceans 11", "image": "movies/oceans_11.webp" },
+    { "name": "Blood Diamond", "image": "movies/blood_diamond.webp" }
+  ],
+  "videoGames": [
+    { "name": "Dark Souls (1,2,3)", "image": "games/dark_souls.jpg" },
+    { "name": "The Legend of Zelda: Breath of the Wild", "image": "games/botw.jpg" },
+    { "name": "Skyrim", "image": "games/skyrim.jpg" },
+    { "name": "Mass Effect", "image": "games/mass_effect.jpg" },
+    { "name": "Rimworld", "image": "games/rimworld.jpg" },
+    { "name": "Starbound", "image": "games/starbound.jpg" }
+  ],
+  "manwha": [
+    { "name": "Omniscient Readers Viewpoint", "image": "manwha/orv.jpg" },
+    { "name": "Return of the Mount Hua Sect", "image": "manwha/mount_hua.jpg" },
+    { "name": "Nano Machine", "image": "manwha/nano_machine.jpg" },
+    { "name": "The Beginning After the End", "image": "manwha/beginning_after_the_end.jpg" },
+    { "name": "Leveling with the Gods", "image": "manwha/leveling_gods.jpg" }
+  ],
+  "manga": [
+    { "name": "Dragon Ball (+Z)", "image": "manga/dragon_ball.jpg" },
+    { "name": "Magi", "image": "manga/magi.jpg" },
+    { "name": "Death Note", "image": "manga/death_note.webp" },
+    { "name": "Darwins Game", "image": "manga/darwins_game.jpg" }
+  ],
+  "anime": [
+    { "name": "Jujutsu Kaisen", "image": "anime/jujutsu_kaisen.jpg" },
+    { "name": "Dororo", "image": "anime/dororo.jpg" },
+    { "name": "Kimetsu no Yaiba", "image": "anime/demon_slayer.jpg" },
+    { "name": "Log Horizon", "image": "anime/log_horizon.jpg" },
+    { "name": "Vinland Saga", "image": "anime/vinland_saga.jpg" }
+  ],
+  "scientists": [
+    { "name": "Richard Feynman", "image": "scientists/richard_feynman.jpg" },
+    { "name": "Leonhard Euler", "image": "scientists/leonhard_euler.jpg" },
+    { "name": "Kurt Godel", "image": "scientists/kurt_godel.jpg" },
+    { "name": "John Von Neumann", "image": "scientists/john_von_neumann.jpg" }
+  ],
+  "philosophers": [
+    { "name": "Immanuel Kant", "image": "philosophers/immanuel_kant.jpg" }
+  ],
+  "artists (classical)": [
+    { "name": "Johannes Vermeer", "image": "artists/johannes_vermeer.jpg" }
+  ],
+  "theatre": [
+    { "name": "Bertolt Brecht", "image": "theatre/brecht.jpg" }
+  ],
+  "books": [
+    { "name": "Our Mathematical Universe", "image": "books/our_mathematical_universe.jpg" },
+    { "name": "The Age of Surveillance Capitalism", "image": "books/surveillance_capitalism.jpg" },
+    { "name": "The Human Use of Human Beings", "image": "books/human_use_of_human_beings.jpg" },
+    { "name": "Alexander: Child of a Dream", "image": "books/alexander.jpg" }
+  ]
+}

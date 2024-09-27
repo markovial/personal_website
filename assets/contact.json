@@ -1,0 +1,98 @@
+{
+  "communication": [
+    {
+      "name": "email",
+      "title": "Email",
+      "icon": "email.svg",
+      "desktop-text": "email-desktop.png",
+      "mobile-text": "email-mobile.png",
+      "qrCode": "email-qr.svg",
+      "value": "example@email.com",
+      "copyable": false
+    },
+    {
+      "name": "linkedin",
+      "title": "LinkedIn",
+      "icon": "linkedin.svg",
+      "desktop-text": "linkedin-desktop.png",
+      "mobile-text": "linkedin-mobile.png",
+      "qrCode": "linkedin-qr.svg",
+      "value": "linkedin.com/in/yourprofile",
+      "copyable": false
+    },
+    {
+      "name": "github",
+      "title": "GitHub",
+      "icon": "github.svg",
+      "desktop-text": "github-desktop.png",
+      "mobile-text": "github-mobile.png",
+      "qrCode": "github-qr.svg",
+      "value": "github.com/yourusername",
+      "copyable": false
+    },
+    {
+      "name": "gitlab",
+      "title": "GitLab",
+      "icon": "gitlab.svg",
+      "desktop-text": "gitlab-desktop.png",
+      "mobile-text": "gitlab-mobile.png",
+      "qrCode": "gitlab-qr.svg",
+      "value": "gitlab.com/yourusername",
+      "copyable": false
+    }
+  ],
+  "messaging": [
+    {
+      "name": "session",
+      "title": "Session",
+      "icon": "session.svg",
+      "desktop-text": "session-desktop.png",
+      "mobile-text": "session-mobile.png",
+      "qrCode": "session-qr.svg",
+      "value": "05ab3cf5d7f9f5f0...",
+      "copyable": true
+    },
+    {
+      "name": "signal",
+      "title": "Signal",
+      "icon": "signal.svg",
+      "desktop-text": "signal-desktop.png",
+      "mobile-text": "signal-mobile.png",
+      "qrCode": "signal-qr.svg",
+      "value": "+1234567890",
+      "copyable": false
+    },
+    {
+      "name": "whatsapp",
+      "title": "WhatsApp",
+      "icon": "whatsapp.svg",
+      "desktop-text": "whatsapp-desktop.png",
+      "mobile-text": "whatsapp-mobile.png",
+      "qrCode": "whatsapp-qr.svg",
+      "value": "+1234567890",
+      "copyable": false
+    },
+    {
+      "name": "telegram",
+      "title": "Telegram",
+      "icon": "telegram.svg",
+      "desktop-text": "telegram-desktop.png",
+      "mobile-text": "telegram-mobile.png",
+      "qrCode": "telegram-qr.svg",
+      "value": "@username",
+      "copyable": false
+    }
+  ],
+  "payments": [
+    {
+      "name": "monero",
+      "title": "Monero",
+      "icon": "monero.svg",
+      "desktop-text": "monero-desktop.png",
+      "mobile-text": "monero-mobile.png",
+      "qrCode": "monero-qr.svg",
+      "value": "4AB...XyZ",
+      "copyable": true
+    }
+  ]
+}

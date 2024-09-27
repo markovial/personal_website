@@ -1,0 +1,126 @@
+[
+  {
+    "category": "calisthenics",
+    "type": "pushup",
+    "name": "Push-ups",
+    "image": "pushups.png",
+    "modalities": [
+      {
+        "name": "Bodyweight (1 set)",
+        "target": 100,
+        "current": 65,
+        "unit": "reps"
+      },
+      {
+        "name": "Weighted (1 set)",
+        "target": 50,
+        "current": 30,
+        "weight": {
+          "target": 75,
+          "current": 30
+        },
+        "unit": "reps"
+      }
+    ],
+    "status": "current"
+  },
+  {
+    "category": "calisthenics",
+    "type": "pullup",
+    "name": "Pull-ups",
+    "image": "pullups.png",
+    "modalities": [
+      {
+        "name": "Bodyweight (1 set)",
+        "target": 30,
+        "current": 20,
+        "unit": "reps"
+      },
+      {
+        "name": "Weighted (1 set)",
+        "target": 15,
+        "current": 10,
+        "weight": {
+          "target": 40,
+          "current": 25
+        },
+        "unit": "reps"
+      }
+    ],
+    "status": "current"
+  },
+  {
+    "category": "calisthenics",
+    "type": "plank",
+    "name": "Plank",
+    "image": "plank.png",
+    "modalities": [
+      {
+        "name": "Max Hold",
+        "target": 300,
+        "current": 240,
+        "unit": "seconds"
+      }
+    ],
+    "status": "current"
+  },
+  {
+    "category": "calisthenics",
+    "type": "muscleup",
+    "name": "Muscle-ups",
+    "image": "muscleup.png",
+    "modalities": [
+      {
+        "name": "Bodyweight (1 set)",
+        "target": 10,
+        "current": 5,
+        "unit": "reps"
+      }
+    ],
+    "status": "current"
+  },
+  {
+    "category": "calisthenics",
+    "name": "Squat",
+    "image": "squat.png",
+    "modalities": [
+      {
+        "name": "Bodyweight (1 set)",
+        "target": 10,
+        "current": 5,
+        "unit": "reps"
+      }
+    ],
+    "status": "current"
+  },
+  {
+    "category": "calisthenics",
+    "name": "Pushups (Pike)",
+    "image": "pushup_pike.png",
+    "status": "current"
+  },
+  {
+    "category": "calisthenics",
+    "name": "Flexibility",
+    "image": "flexibility.png",
+    "status": "current"
+  },
+  {
+    "category": "calisthenics",
+    "name": "Dragon Flag",
+    "image": "dragon_flag.png",
+    "status": "current"
+  },
+  {
+    "category": "cardio",
+    "name": "Sprints",
+    "image": "running.png",
+    "status": "current"
+  },
+  {
+    "category": "calisthenics",
+    "name": "Chin-Ups",
+    "image": "chinups.png",
+    "status": "current"
+  }
+]

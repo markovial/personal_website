@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "slug": "monero",
+      "title": "Monero",
+      "subtitle": "Understanding everything there is to know about Monero.",
+      "authors": ["Markov Grey"],
+      "date": "2023-05-01",
+      "summary": "Understanding everything there is to know about Monero.",
+      "detailLevels": ["Basic", "Intermediate", "Advanced"]
+    },
+    {
+      "slug": "rl",
+      "title": "Reinforcement Learning",
+      "subtitle": "A comprehensive guide to understanding and implementing RL algorithms",
+      "authors": ["Markov Grey"],
+      "date": "2023-05-01",
+      "summary": "This post provides an in-depth exploration of Reinforcement Learning, covering fundamental concepts, algorithms, and practical applications.",
+      "detailLevels": ["Basic", "Intermediate", "Advanced", "PhD"]
+    },
+    {
+      "slug": "semiconductors",
+      "title": "Semiconductors",
+      "authors": ["Markov Grey"],
+      "date": "2024-06-12",
+      "image": "",
+      "subtitle": "Learning more about the semiconductor history, supply chain, geopolitics of it all, and near (~202X) future.",
+      "summary": "Learning more about the semiconductor history, supply chain, geopolitics of it all, and near (~202X) future.",
+      "detailLevels": ["Basic", "Intermediate", "Advanced"]
+    },
+    {
+      "slug": "transformers",
+      "title": "Transformers",
+      "authors": ["Markov Grey"],
+      "date": "2024-05-17",
+      "image": "",
+      "summary": "Explaining attention mechanisms, transformers, embedding spaces, etc.",
+      "subtitle": "Explaining attention mechanisms, transformers, embedding spaces, etc.",
+      "detailLevels": ["Level-1", "Level-2", "Level-3", "Optimus Prime"]
+    }
+  ]
+}

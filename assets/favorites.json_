@@ -1,0 +1,119 @@
+{
+  "artists": [
+    { "name": "Vincent van Gogh", "image": "van-gogh.jpg" }
+  ],
+  "movies": [
+    { "name": "The Prestige", "image": "the_prestige.webp" },
+    { "name": "Troy", "image": "troy.webp" },
+    { "name": "Curious Case of Benjamin Button", "image": "benjamin_button.webp" },
+    { "name": "Oceans 11", "image": "oceans_11.webp" },
+    { "name": "Blood Diamond", "image": "blood_diamond.webp" }
+  ],
+  "books": [
+    { "name": "Thinking, Fast and Slow", "image": "thinking-fast-slow.jpg" }
+  ],
+  "youtubers": [
+    { "name": "Kurzgesagt", "image": "kurzgesagt.jpg" }
+  ],
+  "music": [
+    { "name": "Kordhell",
+"image": "kordhell.jpg",
+"sampleTrack": "fatality.mp3"},
+    { "name": "Jon Hopkins", "image": "jon_hopkins.webp" },
+    { "name": "Infected Mushroom", "image": "infected_mushroom.jpg" },
+    { "name": "Bassnectar", "image": "bassnectar.jpg" },
+    { "name": "Kontra K", "image": "kontra_k.jpg" }
+  ],
+  "philosophers": [
+    { "name": "Immanuel Kant", "image": "kant.jpg" }
+  ],
+  "scientists": [
+    { "name": "Richard Feynman", "image": "feynman.jpg" }
+  ],
+  "tvShows": [
+    { "name": "Breaking Bad", "image": "breaking-bad.jpg" },
+    { "name": "Stranger Things", "image": "stranger-things.jpg" },
+    { "name": "The Office", "image": "the-office.jpg" }
+  ],
+  "podcasts": [
+    { "name": "AXRP", "image": "axrp.jpg", "link": "https://axrp.net/" },
+    { "name": "Machine Learning Street Talk", "image": "mlst.png"}
+  ],
+  "videoGames": [
+    { "name": "The Legend of Zelda: Breath of the Wild", "image": "botw.jpg" },
+    { "name": "Dark Souls", "image": "dark_souls.jpg" },
+    { "name": "Rimworld", "image": "rimworld.jpg" },
+    { "name": "Starbound", "image": "starbound.jpg" }
+  ],
+  "anime": [
+    { "name": "Death Note", "image": "death-note.jpg" }
+  ],
+  "cuisines": [
+    { "name": "Japanese", "image": "japanese-cuisine.jpg" }
+  ],
+  "programmingLanguages": [
+    { "name": "Python", "image": "python.jpg" },
+    { "name": "JavaScript", "image": "javascript.jpg" },
+    { "name": "Rust", "image": "rust.jpg" }
+  ],
+  "artMovements": [
+    { "name": "Impressionism", "image": "impressionism.jpg" },
+    { "name": "Surrealism", "image": "surrealism.jpg" },
+    { "name": "Pop Art", "image": "pop-art.jpg" }
+  ],
+  "inventions": [
+    { "name": "Internet", "image": "internet.jpg" },
+    { "name": "Penicillin", "image": "penicillin.jpg" },
+    { "name": "Printing Press", "image": "printing-press.jpg" }
+  ],
+  "charities": [
+    { "name": "Signal", "image": "signal.png" }
+  ],
+  "quotes": [
+    { "name": "\"Be the change you wish to see in the world.\" - Mahatma Gandhi", "image": "gandhi-quote.jpg" },
+    { "name": "\"I think, therefore I am.\" - René Descartes", "image": "descartes-quote.jpg" },
+    { "name": "\"The only way to do great work is to love what you do.\" - Steve Jobs", "image": "jobs-quote.jpg" }
+  ],
+  "blogs": [
+    { "name": "Wait But Why", "image": "wait-but-why.jpg" },
+    { "name": "Brain Pickings", "image": "brain-pickings.jpg" },
+    { "name": "Seth's Blog", "image": "seths-blog.jpg" }
+  ],
+
+
+  "comics": [
+    { "name": "Calvin and Hobbes", "image": "calvin-and-hobbes.jpg" },
+    { "name": "Watchmen", "image": "watchmen.jpg" },
+    { "name": "Persepolis", "image": "persepolis.jpg" }
+  ],
+
+
+  "fashionStyles": [
+    { "name": "Minimalist", "image": "minimalist-fashion.jpg" },
+    { "name": "Vintage", "image": "vintage-fashion.jpg" },
+    { "name": "Street Style", "image": "street-style.jpg" }
+  ],
+
+
+  "mathematicalConcepts": [
+    { "name": "Fibonacci Sequence", "image": "fibonacci.jpg" },
+    { "name": "Euler's Identity", "image": "eulers-identity.jpg" },
+    { "name": "Mandelbrot Set", "image": "mandelbrot-set.jpg" }
+  ],
+
+
+  "scientificTheories": [
+    { "name": "Theory of Relativity", "image": "relativity.jpg" },
+    { "name": "Quantum Mechanics", "image": "quantum-mechanics.jpg" },
+    { "name": "Evolution by Natural Selection", "image": "evolution.jpg" }
+  ],
+
+
+  "philosophicalConcepts": [
+    { "name": "Existentialism", "image": "existentialism.jpg" },
+    { "name": "Utilitarianism", "image": "utilitarianism.jpg" },
+    { "name": "Categorical Imperative", "image": "categorical-imperative.jpg" }
+  ],
+
+
+}
